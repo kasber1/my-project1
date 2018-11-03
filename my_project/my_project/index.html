@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MY PORTFILO</title>
+    <link rel = "stylesheet" href= 'css/normal.css'>
+        <link rel="stylesheet" href='css/style.css'>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    
+        .slider {
+    
+    width: 100%;
+    height: 450px;
+    background-image: url(http://faussetprinting.com/wp-content/uploads/2017/06/web-design-slider.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: -30px;
+
+}
+        
+        
+       
+        .header h1 {
+            
+            color:#FFF;
+            font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            border: 3px solid #FFF;
+           width:200px;
+            line-height: 60px;
+            
+            border-left: none;
+            border-right: none;
+            float: left;
+            text-shadow: -10px 15px 14px #000;
+            
+           
+           
+        }
+            
+        .learn {
+            float: right;
+            margin-top: 200px;
+            margin-right:800px;
+            font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .learn button {
+            
+            padding:20px;
+            border: none;
+            color:#FFF;
+            background: none;
+            border:2px solid #FFF;
+            font-weight: bolder;
+            text-shadow:-2px -7px 13px #000;
+            box-shadow: -1px 1px 20px #000;
+            
+        }
+        
+        
+        ul {
+            background-color: #242e30;
+            list-style: none;
+            color: #FFF;
+            font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            width: 100%;
+            float: right;
+            
+            
+                        
+        }
+       ul li {
+            display: inline-block;
+            margin: 20px;
+           margin-left: 30px;
+                       
+        }
+        
+        .logo {
+            float: right;
+            margin-top: -55px;
+            margin-right: 300px;
+        }
+         /*----------------------------------*/
+        .container {
+           
+            height: 200px;
+            margin-top: 100px;
+            
+            
+        }
+        /*----------------------------------*/
+        
+        .art1 {
+            width: 300px;
+            /*border: 1px solid #000;*/
+            height: 300px;
+            float: left;
+            margin-left: 50px;
+            
+        }
+        
+        .art2 {
+            width: 300px;
+            /*border: 1px solid #000;*/
+            height: 300px;
+            float: right;
+            margin-right: 90px;
+        }
+        .art3 {
+            width: 300px;
+            /*border: 1px solid #000;*/
+            height: 300px;
+            float: right;
+            margin-right: 200px;
+        }
+        .art1,.art2,.art3 {
+            font-family: Verdana;
+            color: #242e30;
+            
+            
+        }
+        .art1 h4 {
+            color:#999;
+            font-family:sans-serif;
+            font-size: 18px;
+            color:#717B7D;
+        }
+        .art2 h4 {
+           
+            color:#999;
+            font-family:sans-serif;
+            font-size: 18px;
+            color:#717B7D;
+        }
+        
+        .art3 h4 {
+           
+            color:#999;
+            font-family:sans-serif;
+            font-size: 18px;
+            color:#717B7D;
+        }
+        .cont2 {
+            height: 500px;
+            background-color: #F1F1F1;
+        }
+       
+        
+        .pro {
+            float: left;
+            margin-top: -100px;
+        }
+        /******************************/
+        .about {
+            width: 650px;
+            float: right;
+            height: 500px;
+            margin-top: -100px;
+            margin-right: 100px;
+        }
+        .me h4 {
+            
+            color:#999;
+            font-family:sans-serif;
+            font-size: 18px;
+            color:#717B7D;
+        }
+        .me {
+            width: 600px;
+        }
+        .me p {
+            font-family: Verdana;
+            color: #7f7f7f;
+            font-size: 13px;
+        }
+        
+        .work {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .skills {
+            height: 400px;
+            margin-top: 40px;
+            
+            
+        }
+        
+        .skillf{
+            
+            width: 400px;
+            float: left;
+            height: 300px;
+            margin-left: 120px;
+        }
+        
+        .skillf p {
+            font-family: Verdana;
+            color: #7f7f7f;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .skillr {
+            width: 400px;
+            height: 400px;
+            float: right;
+            margin-right: 250px;
+        }
+        
+        progress[value]::-webkit-progress-value {
+            
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #09c, #f44);
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+        .resum {
+            height: 250px;
+            background-color: #F1F1F1;
+            text-align: center;
+        }
+        .resum h3 {
+            font-family: tahoma;
+            color:#525A5C;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .port {
+            height: 700px;
+            text-align: center;
+            
+        }
+        .contact {
+            height: 500px;
+            background-color: #242E30;
+        }
+        .info {
+            width: 400px;
+            height: 600px;
+            float: left;
+            margin-top: 30px;
+            margin-left: 60px;
+            text-align: left;
+        }
+        .info h3 {
+            font-family: tahoma;
+            color:#FFF;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .info p {
+            color:#858788;
+            font-family: Verdana;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+        .form {
+            width: 500px;
+            height: 500px;
+            float: right;
+            margin-top: 30px;
+            margin-right: 100px;
+        }
+        .form input {
+            width: 350px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border:none;
+            background-color: #4A5456;
+            
+        }
+        .form label {
+            color:#fff;
+            font-family: Verdana;
+        
+        }
+        .footer {
+            height: 150px;
+            background-color: #181D21;
+            text-align: center;
+        }
+    
+        
+        .l1:hover{color:#00fe06}
+		.l1:active{color:#9ff0a1}
+		
+		
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+  <div class='slider'><br>
+      <div class="header">
+      
+        <h1 style="margin-top:120px;margin-left:100px;" >  WEB DESIGNER & DEVELOPER</h1>
+        
+        </div>
+      
+      <div class="learn">
+          
+          <button>LEARN MORE</button>
+      
+      </div>
+        
+      
+      
+      <!--********************** SLID ************************* -->
+        </div>
+        
+        <!--********************** END SLID ************************* -->
+        
+        <div class="nav">
+            
+            
+            <ul>
+                 
+                <li class="l1">HOME<!--الرئيسية--></li>
+                <li class="l1">ABOUT ME<!--نبذة عني--></li>
+                <li class="l1">SKILLS<!--المهارات--></li>
+                <li class="l1">RESUME<!--استئناف--></li>
+                <li class="l1">PORTFILO<!--بروتيفايلو--></li>
+                <li class="l1" style="color:#2ad575;" >CONTACT ME</li>
+                <li class="l1">TESTIMONIALS<!--شهادات--></li>
+                
+                
+                
+            </ul>
+            
+        <div class="logo">
+             
+            <img src="img/icone.png">
+            
+            </div>
+            
+            
+        
+        </div>
+        <!--********************** إنهاء شريط التنقل ************************* -->     
+        
+        <!--********************** بداية الجسم ************************* --> 
+        
+        
+        <div class="container" >
+            
+            <!--*********************-->
+            <div class="art1">
+                <h4><b>هواياتي</b></h4>
+                
+                <P style='margin-top: 30px;line-height: 25px;color:#575f62;' >انا احب مجال التصاميم وبالاخص تصميم صفحات الويب من قبل التحاقي في هذا المجال وانا احب هذه الهواية وادعمها من كل قلبي الا اني التحقت بها حديثا</P>
+		
+				</P>
+             
+            
+            </div>
+            
+            
+            <!--*********************-->
+            
+            <!--*********************-->
+             <div class='art2'>
+                 <h4><b>الاهداف</b></h4>
+                 
+                 <p style='margin-top: 30px;line-height: 25px;color:#575f62;'>أريد ان أكون مبرمجا مهنيا وأريد ان أكون هاكر والعثور علي الثغرات الامنيه وانا أؤمن بقدراتي ويوما ما ساكون الشخص الذي أريد.</p>
+            
+                  
+            
+            </div>
+            <!--*********************-->
+            
+            <!--*********************-->
+             <div class="art3">
+                 <h4><b>القيم</b></h4>
+              <p style='margin-top: 30px;line-height: 25px;color:#575f62;'>انا أحب عملي كثيرا لدرجه انني لا يهمني إذا كنت لا تجلب الكثير من المال. ما يهم بالنسبة لي هو انني أتقنت عملي لكي أقوم به.</p>                
+            
+            </div>
+            <!--*********************-->
+        
+        </div>
+        
+        
+        <!--********************** نهاية الجسم ************************* -->
+        
+         <!--********************** أبدا عني ************************* -->
+        
+        
+        
+        <div  class="cont2" >
+            
+            <!--********************** صوره النجمة ************************* -->
+            
+            <div class="pro">
+                
+                <img src="img/pro.jpg">
+            
+            </div>
+            
+            <!--********************** الصورة النهائية ************************* -->
+            
+            <div class="about">
+                
+                <!--******************* أبدا البيانات *************-->
+                
+                
+                <div class="me">
+                
+                    <h4 style="margin-top: 100px;" >نبذه عني</h4><br>
+                    
+                    <p>مرحبا اسمي بلال انا من فلسطين عمري 16 سنه<br> انا اعمل في تصميم المواقع الكترونيه منذ فترة وجيزة<br> لدي بعض المهارات في تطوير الشبكة والدراسة لا تزال لتطوير مهاراتي في حياتي الوظيفية.</p><br>
+                    
+                    <p>انا أحب عملي وافعل ذلك من قلبي قبل يدي وأحب ان اري الشخص الآخر يعمل.</p>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+                <!--******************* إنهاء لي *************-->
+                
+                <div class="work">
+                
+                    <img src="img/25.png">
+                
+                </div>
+            
+                
+            
+            </div>
+        
+        
+        </div>
+        
+        <!--********************** إنهاء عني ************************* -->
+        
+        <!--********************** مهارات النجوم ************************* -->
+        
+        
+        <div class="skills">
+            <!--************************ المهارة المتبقية *************-->
+            
+            <div class="skillf">
+              
+                 <h4 style="margin-top: 20px;color:#999;font-family:sans-serif;font-size: 18px;color:#717B7D;">المهارات</h4>
+                
+            <p style="margin-top: 30px;">لدي بعض المهارات في تصميم وتطوير المواقع ولكن لا بد لي من تطوير مهاراتي أكثر حتى أتمكن من الدخول في عالم العمل لان سوق العمل يحتاج إلى المهارة والدقة في الإنجاز ومعظم الضوابط في سوق العمل لديها خبره واسعه في توريث الميدان وأكثر اهتماما مع جانب التنمية.</p>
+            <p style="margin-top: 20px;">هذه هي بعض من المهارات لدي ولكن انا لست راضيا عني حتى الآن :</p>
+                
+                <button style="margin-left: 120px;padding: 12px;margin-top: 15px;border:none;background: none;color:#30dd89;border:2px solid #30dd89;font-family: tahoma;font-weight: 600;" >CONTACT ME </button>
+            
+            </div>
+         <!--************************ نهاية اليسار *************-->
+            
+            <!--************************* بدء التصويت *********************-->
+            
+            
+            <div class='skillr'>
+                
+             <h4 style="margin-top: 20px;color:#999;font-family:sans-serif;font-size: 18px;color:#717B7D;">HTML</h4>
+                
+                <progress value="90" max="100" style="background-color: #30DD89;width: 250px;margin-top: 15px;height: 30px;">90%
+                </progress>
+                
+                <h4 style="margin-top: 20px;color:#999;font-family:sans-serif;font-size: 18px;color:#717B7D;">CSS</h4>
+                
+                <progress value="85" max="100" style="background-color: #30DD89;width: 250px;margin-top: 15px;height: 30px;">85%
+                </progress>
+                
+                <h4 style="margin-top: 20px;color:#999;font-family:sans-serif;font-size: 18px;color:#717B7D;">PHP</h4>
+                
+                <progress value="55" max="100" style="background-color: #30DD89;width: 250px;margin-top: 15px;height: 30px;">85%
+                </progress>
+                
+                <h4 style="margin-top: 20px;color:#999;font-family:sans-serif;font-size: 18px;color:#717B7D;">JAVA SCRIPT</h4>
+                
+                <progress value="55" max="100" style="background-color: #30DD89;width: 250px;margin-top: 15px;height: 30px;">40%
+                </progress>
+            
+            </div>
+            
+            
+            <!--************************* نهاية التصويت *********************-->
+            
+        
+        
+        </div>
+        
+        <!--********************** المهارات النهائية ************************* -->
+         
+        
+        <!--********************** بدء السيرة الذاتية ************************* -->
+        
+        <div class="resum">
+            
+            <h3>استئناف</h3>
+            
+            <div style="width: 700px;margin-left: 300px;font-family: Verdana;color: #7f7f7f;font-size: 13px;line-height: 1.5">
+            <p>التصميم هو متعه للفنانين والتنمية هو متعه للمفكرين وكلا منهم عالمه الخاص ، ولكن بالنسبة لي تصميم جزء من حياتي أود أن أوضع خطط جديده<br> والمستخدمين إبداعات جديده وتركيزي مع الاساسيه<br> الألوان مهمة جدا لانها هي من جعل التصميم جميل.</p>
+                </div>
+               <button style="padding: 12px;margin-top: 15px;border:none;background: none;color:#30dd89;border:2px solid #30dd89;font-family: tahoma;font-weight: 600;" >DOWNLOAD RESUME </button>
+            
+        
+        </div>
+        <!--********************** نهاية السيرة الذاتية ************************* -->
+        
+        <!--********************** استثمارات ************************* -->
+        
+           <div class="port">
+               <h3 style='margin-top:50px;font-family: tahoma;color:#525A5C;padding: 20px;font-size: 23px;'>PORTFOLIO</h3>
+               
+              <img src="img/port.PNG">
+        
+        
+        
+        </div>
+            
+        
+        
+        <!--********************** المحفظة النهائية ************************* -->
+        
+                <!--********************** أبدا الاتصال بي ************************* -->
+        <div class="contact">
+            
+            <!--********************** معلومات البدء ************************* -->
+            <div class="info">
+                <h3>اتصل بي</h3>
+                
+                <p>شكرا لكم واتمني الاتصال بي عند الحاجة لمصمم صفحات انترنت : </p>
+                <br>
+                
+                <p>الشارع حيفا 12 </p>
+                <p>غزة/فلسطين </p>
+                
+                <p style="margin-top:30px;" ><font color=#FFF>Email:</font>bb2979851@gmail.com</p>
+                <p style="margin-top:30px;" ><font color=#FFF>Phone:</font>+972597754357</p>
+            
+                
+            
+            </div>
+        <!--********************** نهاية المعلومات ************************* -->
+            
+            <div class="form">
+                
+                <label>Name*</label><br>
+                
+                <input type="text" placeholder="name"><br>
+                <label>Email address*</label><br>
+                <input type="text" placeholder="Email address"><br>
+                <textarea style="width: 400px;height: 200px;background-color: #4A5456;border:none;margin-top: 30px;color:#999;font-family:Verdana; " >Add comment here</textarea>
+                
+                <div style="margin-top: 40px;" >
+                <button style="padding: 7px;width: 120px;border:none;background-color:#181D21;color:#FFF;font-family:Verdana; ">Contact me</button>
+                    </div>
+            
+            
+            
+            
+            </div>
+        
+        
+        </div>
+        
+        <!--********************** إنهاء الاتصال بي ************************* -->
+        
+        <div class="footer"><br><br>
+         
+            
+            <h5 style="margin-right: 500px;color:#738386;font-family:Verdana;font-weight: 100;" >All KING KASBER. copyright © 2018</h5>
+        
+        </div>
+
+    
+    
+    </body>
+</html>
